@@ -19,10 +19,16 @@ function getCurrentUri() {
 <script>
 $(document).ready(function() {
   function _reset() {
+	$('.home').removeClass('active');
     $('.business').removeClass('active');
     $('.users').removeClass('active');
     $('.categories').removeClass('active');
-    $('.items').removeClass('active');
+	$('.map').removeClass('active');
+  }
+  if (window.location.pathname.indexOf('home.php') !== -1 )
+  {
+    _reset();
+    $('.home').addClass('active');
   }
   if (window.location.pathname.indexOf('businesses.php') !== -1 )
   {
@@ -39,10 +45,10 @@ $(document).ready(function() {
     _reset();
     $('.categories').addClass('active');
   }
-  if (window.location.pathname.indexOf('items.php') !== -1 )
+  if (window.location.pathname.indexOf('map.php') !== -1 )
   {
     _reset();
-    $('.items').addClass('active');
+    $('.map').addClass('active');
   }
   //active
 });
@@ -52,24 +58,16 @@ $(document).ready(function() {
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="#">Corvalis Sustainability</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="users"><a href="<?php getCurrentUri() ?>/users.php">Settings <span class="sr-only">(current)</span></a></li>
-        <li class="business"><a href="<?php getCurrentUri() ?>/businesses.php">Manage Businesses</a></li>
-        <li class="categories"><a href="<?php getCurrentUri() ?>/categories.php">Manage Categories</a></li>
-        <li class="items"><a href="<?php getCurrentUri() ?>/items.php">Manage Items</a></li>
-        <li class="logout"><a href="<?php getCurrentUri() ?>/logout.php">Logout</a></li>
-
+		<li class="home"><a href="<?php getCurrentUri() ?>/home.php">Home</a></li>
+        <li class="business"><a href="<?php getCurrentUri() ?>/businesses.php">Businesses</a></li>
+        <li class="categories"><a href="<?php getCurrentUri() ?>/categories.php">Categories</a></li>
+		<li class="map"><a href="<?php getCurrentUri() ?>/map.php">Map</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
