@@ -30,22 +30,25 @@
 	<head>
 	<title>Corvalis Sustainability App</title>
 	</head>
-
 	<body>
 		<?php include 'partials/nav.php';?>
 		<div class="container">
-			<H3>Welcome to the <b>Corvallis Reuse and Repair Directory</b></H3>
-			<p></p>
+			<img src="Sustainability-Fair.jpg" alt="Corvallis Sustainability Coalition" style="width:650px;height:228px;">
+			<br><br>
+			<h1><b>Corvallis Reuse and Repair Directory</b></h1>
+			<br><br><br>
+			<h2>Welcome!</h2>
 			<p>To view a list of businesses that take reusable or repairable items, please select the 'Businesses' tab above.</p>
 			<p>To view a list of categories and the items that fall in those categories, please select the 'Categories' tab above.</p>
 			<p>To view a map of the businesses, please select the 'Map' tab above.</p>
-			<p> </p>
-			<p> </p>
-			<p><b>Links to the Republic recycling depot can be found here:</b></p>
-			<p>What is accepted: </p>
-			<p><a href=http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycleddepot.pdf_add_annotation>http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycleddepot.pdf_add_annotation</a></p>
-			<p>What can be placed in curbside recycling containers:</p>
-			<p><a href=http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf>http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf</a></p>
+			<br><br><br><br><br>
+			<h5 style="background: white; color: black; line-height: 1em; border: 5px solid green">
+				<p><b>Links to the Republic recycling depot can be found here:</b></p>
+				<p>What is accepted: </p>
+				<p><a href=http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycleddepot.pdf_add_annotation>http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycleddepot.pdf_add_annotation</a></p>
+				<p>What can be placed in curbside recycling containers:</p>
+				<p><a href=http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf>http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf</a></p>
+			</h5>
 		</div>
 
 	</body>
